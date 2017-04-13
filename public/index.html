@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<nav class="navbar  navbar-dark black">
+    <div class="container">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" ui-sref="home"><span>Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref="me">Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ui-sref="skills">Skills</a>
+            </li>
+        </ul>
+
+
+    </div>
+</nav>
+{{user}}
+<ui-view></ui-view>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+
+<script src="app.js"></script>
+
+<script src="components/homeComponent.js"></script>
+<script src="components/meComp.js"></script>
+<script src="components/skillzComp.js"></script>
+<script src="mainService.js"></script>
+</body>
+</html>

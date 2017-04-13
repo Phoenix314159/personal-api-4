@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="../styles/meStyle.css">
+<main>
+<h1>Me : {{$ctrl.name}}</h1>
+    <h1>This is my family:</h1>
+    <div ng-repeat="x in $ctrl.family">
+        <ul>
+            <li>Name: {{x.name}}</li>
+            <li>Relation: {{x.relation}}</li>
+            <li>Gender: {{x.gender}}</li>
+        </ul>
+    </div>
+</main>
+<div class="main2">
+    <h3>Change my name</h3>
+    <input ng-model="$ctrl.name4" type="text"/>
+    <button ng-click="$ctrl.changeName()">Change</button>
+
+</div>
+<div class="main3">
+    <h3>Add a family member</h3>
+    <input ng-model="$ctrl.name2" type="text" placeholder="enter a name"/>
+    <input ng-model="$ctrl.relation" type="text" placeholder="enter a relation"/>
+    <input ng-model="$ctrl.gender" type="text" placeholder="enter a gender"/>
+    <button ng-click="$ctrl.addMember()">Add</button>
+
+</div>
+<div class="main4">
+    <h3>Delete a family member</h3>
+    <input ng-model="$ctrl.name3" type="text" placeholder="enter a name"/>
+    <button ng-click="$ctrl.deleteMember()">Delete</button>
+</div>
